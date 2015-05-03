@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		988E5D151AF69A6600B37E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E5D141AF69A6600B37E66 /* AppDelegate.swift */; };
-		988E5D171AF69A6600B37E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E5D161AF69A6600B37E66 /* ViewController.swift */; };
-		988E5D1A1AF69A6600B37E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E5D181AF69A6600B37E66 /* Main.storyboard */; };
-		988E5D1C1AF69A6600B37E66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988E5D1B1AF69A6600B37E66 /* Images.xcassets */; };
-		988E5D1F1AF69A6600B37E66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988E5D1D1AF69A6600B37E66 /* LaunchScreen.xib */; };
-		988E5D2B1AF69A6700B37E66 /* SpotifySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E5D2A1AF69A6700B37E66 /* SpotifySearchTests.swift */; };
+		988E5D351AF69A7000B37E66 /* spotifySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E5D341AF69A7000B37E66 /* spotifySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +21,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		988E5D0F1AF69A6600B37E66 /* SpotifySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		988E5D131AF69A6600B37E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		988E5D141AF69A6600B37E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		988E5D161AF69A6600B37E66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		988E5D191AF69A6600B37E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		988E5D1B1AF69A6600B37E66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		988E5D1E1AF69A6600B37E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		988E5D241AF69A6700B37E66 /* SpotifySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		988E5D291AF69A6700B37E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		988E5D2A1AF69A6700B37E66 /* SpotifySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifySearchTests.swift; sourceTree = "<group>"; };
+		988E5D0F1AF69A6600B37E66 /* SpotifySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SpotifySearch.app; path = "/Users/kemec/iOSApps/SpotifySearch/build/Debug-iphoneos/SpotifySearch.app"; sourceTree = "<absolute>"; };
+		988E5D241AF69A6700B37E66 /* SpotifySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SpotifySearchTests.xctest; path = "/Users/kemec/iOSApps/SpotifySearch/build/Debug-iphoneos/SpotifySearchTests.xctest"; sourceTree = "<absolute>"; };
+		988E5D341AF69A7000B37E66 /* spotifySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotifySearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,56 +48,15 @@
 			isa = PBXGroup;
 			children = (
 				988E5D111AF69A6600B37E66 /* SpotifySearch */,
-				988E5D271AF69A6700B37E66 /* SpotifySearchTests */,
-				988E5D101AF69A6600B37E66 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		988E5D101AF69A6600B37E66 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				988E5D0F1AF69A6600B37E66 /* SpotifySearch.app */,
-				988E5D241AF69A6700B37E66 /* SpotifySearchTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		988E5D111AF69A6600B37E66 /* SpotifySearch */ = {
 			isa = PBXGroup;
 			children = (
-				988E5D141AF69A6600B37E66 /* AppDelegate.swift */,
-				988E5D161AF69A6600B37E66 /* ViewController.swift */,
-				988E5D181AF69A6600B37E66 /* Main.storyboard */,
-				988E5D1B1AF69A6600B37E66 /* Images.xcassets */,
-				988E5D1D1AF69A6600B37E66 /* LaunchScreen.xib */,
-				988E5D121AF69A6600B37E66 /* Supporting Files */,
+				988E5D341AF69A7000B37E66 /* spotifySearch.swift */,
 			);
 			path = SpotifySearch;
-			sourceTree = "<group>";
-		};
-		988E5D121AF69A6600B37E66 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				988E5D131AF69A6600B37E66 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		988E5D271AF69A6700B37E66 /* SpotifySearchTests */ = {
-			isa = PBXGroup;
-			children = (
-				988E5D2A1AF69A6700B37E66 /* SpotifySearchTests.swift */,
-				988E5D281AF69A6700B37E66 /* Supporting Files */,
-			);
-			path = SpotifySearchTests;
-			sourceTree = "<group>";
-		};
-		988E5D281AF69A6700B37E66 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				988E5D291AF69A6700B37E66 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +124,7 @@
 				Base,
 			);
 			mainGroup = 988E5D061AF69A6600B37E66;
-			productRefGroup = 988E5D101AF69A6600B37E66 /* Products */;
+			productRefGroup = 988E5D061AF69A6600B37E66;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -192,9 +139,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988E5D1A1AF69A6600B37E66 /* Main.storyboard in Resources */,
-				988E5D1F1AF69A6600B37E66 /* LaunchScreen.xib in Resources */,
-				988E5D1C1AF69A6600B37E66 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988E5D171AF69A6600B37E66 /* ViewController.swift in Sources */,
-				988E5D151AF69A6600B37E66 /* AppDelegate.swift in Sources */,
+				988E5D351AF69A7000B37E66 /* spotifySearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +164,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988E5D2B1AF69A6700B37E66 /* SpotifySearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +176,6 @@
 			targetProxy = 988E5D251AF69A6700B37E66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		988E5D181AF69A6600B37E66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				988E5D191AF69A6600B37E66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		988E5D1D1AF69A6600B37E66 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				988E5D1E1AF69A6600B37E66 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		988E5D2C1AF69A6700B37E66 /* Debug */ = {
