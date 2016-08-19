@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter search term..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ddf-ah-Bhh">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="r4t4"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="73" y="28" width="254" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="textEditing:forEvent:" destination="BYZ-38-t0r" eventType="editingChanged" id="vB1-vM-qTI"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBT-dB-Nrb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="334" id="BiF-v4-BeN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BiF-v4-BeN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="73" y="83" width="254" height="334"/>
+                                    <mask key="constraints">
+                                        <include reference="BiF-v4-BeN"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qBT-dB-Nrb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="1g3-U2-uA6"/>
+                            <constraint firstItem="Ddf-ah-Bhh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OgH-bY-8qE"/>
+                            <constraint firstItem="Ddf-ah-Bhh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="PMF-es-aCf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qBT-dB-Nrb" secondAttribute="trailing" constant="10" id="cQF-ne-ais"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ddf-ah-Bhh" secondAttribute="trailing" constant="53" id="uA0-4N-Js8"/>
+                            <constraint firstItem="qBT-dB-Nrb" firstAttribute="top" secondItem="Ddf-ah-Bhh" secondAttribute="bottom" constant="25" id="uQ7-Ep-9zp"/>
+                            <constraint firstItem="Ddf-ah-Bhh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vT7-d2-wN7"/>
+                            <constraint firstItem="qBT-dB-Nrb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIm-iP-joa"/>
+                            <constraint firstItem="Ddf-ah-Bhh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="xim-L6-Dkg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Ddf-ah-Bhh"/>
+                                <exclude reference="qBT-dB-Nrb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="OgH-bY-8qE"/>
+                                <exclude reference="PMF-es-aCf"/>
+                                <exclude reference="uA0-4N-Js8"/>
+                                <exclude reference="vT7-d2-wN7"/>
+                                <exclude reference="xim-L6-Dkg"/>
+                                <exclude reference="1g3-U2-uA6"/>
+                                <exclude reference="cQF-ne-ais"/>
+                                <exclude reference="uQ7-Ep-9zp"/>
+                                <exclude reference="wIm-iP-joa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ddf-ah-Bhh"/>
+                                <include reference="qBT-dB-Nrb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OgH-bY-8qE"/>
+                                <include reference="PMF-es-aCf"/>
+                                <include reference="uA0-4N-Js8"/>
+                                <include reference="vT7-d2-wN7"/>
+                                <include reference="xim-L6-Dkg"/>
+                                <include reference="1g3-U2-uA6"/>
+                                <include reference="cQF-ne-ais"/>
+                                <include reference="uQ7-Ep-9zp"/>
+                                <include reference="wIm-iP-joa"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="resultsField" destination="qBT-dB-Nrb" id="pbj-Y3-Gq5"/>
+                        <outlet property="searchField" destination="Ddf-ah-Bhh" id="iI1-hL-pab"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="387"/>
         </scene>
     </scenes>
 </document>
